@@ -1,0 +1,26 @@
+# maybe come back later to verify input
+import random
+
+lower = input("Enter an integer to define the lower range: ")
+upper = input("Enter an integer to define the upper range: ")
+
+random_number = random.randint(int(lower), int(upper))
+
+print(random_number)
+
+guess = input("Guess the number: ")
+
+counter = int(1)
+
+while guess != random_number:
+    if random_number == int(guess):
+        break
+    
+    elif int(guess) < random_number:
+        guess = input("WRONG. Number is bigger. Please try again: ")
+        counter += counter
+    else:
+        guess = input("WRONG. Number is smaller. Please try again: ")
+        counter += counter
+
+print(f"Congrats! You guessed the number in {counter - 1} tries!")
