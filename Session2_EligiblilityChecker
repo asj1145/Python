@@ -1,0 +1,19 @@
+# logical operators
+has_good_credit = input("Do you have good credit? (Enter 'Y' for yes or 'N' for no: ")
+has_criminal_record = input("Do you have criminal record? (Enter 'Y' for yes or 'N' for no: ")
+
+if has_good_credit == 'Y':
+    has_good_credit = True
+else:
+    has_good_credit = False
+
+if has_criminal_record == 'Y':
+    has_criminal_record = True
+else:
+    has_criminal_record = False
+
+if has_good_credit and not has_criminal_record:
+    print("You are eligible for a loan")
+    
+else:
+    print("DENIED")
