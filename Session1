@@ -1,0 +1,17 @@
+print("Welcome to the Digit Switcher!")
+user = input("Enter a two-digit number: ")
+
+# store the tens and ones digit separately
+tens = int(user) // 10
+ones = int(user) % 10
+
+# switch the digits and print
+reversed = str(ones) + str(tens)
+
+# the printf function allows you to embed a variable into a string. 
+print(f"The tens digit of your number is {tens}.")
+
+# you can use the normal print function like this:
+print("The ones digit of your number is " + str(ones))
+
+print(f"Your numebr reversed is {reversed}.")
