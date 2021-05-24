@@ -1,0 +1,16 @@
+weather = input ("is the weather good today?(Y or N)")
+
+time = input ("do you have time?(Y or N)")
+
+if weather == "Y": 
+    weather = True
+else: 
+    weather = False
+
+if time == "Y": 
+   time = True
+else: 
+    time = False
+
+if weather == True and time == True:
+    print ("Stay inside and watch anime all day")
